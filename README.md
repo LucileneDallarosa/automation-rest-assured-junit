@@ -1,9 +1,9 @@
 # Automation Code Challenge RestAssured
-This project aimed to automate the site https://www.interzoid.com/services/getweathercity
+This project aimed to automate the API result https://www.interzoid.com/services/getweathercity
  
 
 ## Steps
-* Access www.interzoid.com and create a free account (do not spend any money, use a 10minutemail.com e-mail account id if you need more than 25 tries).
+* Access www.interzoid.com and create a free account;
 * API that should be tested is available https://www.interzoid.com/services/getweathercity
 * Fill the request with these required fields with this information
 
@@ -20,7 +20,7 @@ This project aimed to automate the site https://www.interzoid.com/services/getwe
 
 ## Run
     mvn clean test -Penv = "ENVIRONMENT" -PbaseLicense = "LICENSE"
-- ENVIRONMENT - Environment in which the tests will be performed (develop or homolog)
+- ENVIRONMENT - Environment where tests will be performed (develop or homologate)
 - LICENSE - License number provided by the website
  
 ## Tools
@@ -28,9 +28,9 @@ This project aimed to automate the site https://www.interzoid.com/services/getwe
 * Java
 
 ## Frameworks used
-* RestAssured 
-* log4j 
-* junit5 
+* RestAssured to access the service and check if the result is as expected;
+* Log4j to add logs at the critical and necessary points of automation;
+* Junit5 for the test execution;
 
 ## Future
 * If the project grows, put a suite structure
