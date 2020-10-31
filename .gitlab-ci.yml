@@ -1,0 +1,20 @@
+stages:
+  - contract
+  - acceptable
+
+Contract:
+  stage: contract
+  script:
+    - mvn clean test -Dtest=com.interzoid.api.request.testcases.contract
+  only:
+    - master
+    - branches
+    - tags
+
+Acceptable:
+  stage: acceptable
+  script:
+    - mvn clean test -Dtest=com.interzoid.api.request.testcases.acceptable
+  only:
+    - master
+    - tags
