@@ -1,4 +1,3 @@
-
 # Automation Code Challenge RestAssured
 
  
@@ -16,7 +15,7 @@
 * log4j 
 * junit5 
 
-## Future Implementations
+## Future
 * If the project grows, put a suite structure
 * If the company uses Jira, put tm4j-automation
 * If the flow becomes more complex, use the BDD format
